@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --mancity_color: #4f9fd1;
+            --body_color: #202020;
+        }
+        body{
+            background-color: var(--body_color);
+        }
+        #color_test{
+            width: 150px;
+            height: 150px;
+            background-color: var(--mancity_color);
+            border-width: 5px;
+            border-style: solid;
+            border-color: greenyellow;
+            transition: width 3s, height 3s, border-color 3s ease-in-out;
+        }
+
+        #color_test:hover{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border-color: var(--body_color);
+        }
+
+        @keyframes mc_animation {
+            0%{
+                transform: rotate(0deg);
+            }
+            20%{
+                transform: rotate(5turn);
+                translate: 100px -300px;
+            }
+            100%{
+                transform: rotate(360deg);
+                translate: 1000px;
+            }
+        }
+
+        img{
+            border-radius: 50%;
+            animation: mc_animation 5s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="color_test"></div>
+    <img src="img/logo2.jpeg" alt="">
+</body>
+</html>

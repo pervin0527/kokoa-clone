@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --mancity_color: #4f9fd1;
+            --body_color: black;
+        }
+        body{
+            background-color: var(--body_color);
+            display: flex;
+            justify-content: center;
+        }
+        .test_div{
+            background-color: var(--mancity_color);
+            width: 300px;
+            height: 300px;
+        }
+        @media screen and (min-width:480px) and (min-height:640px){
+            .test_div{
+                background-color: tomato;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <div class="test_div"></div>
+    
+</body>
+</html>
