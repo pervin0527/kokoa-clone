@@ -1,6 +1,11 @@
 .user-component, .user-component__column:first-child{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.user-component:last-child{
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .user-component__avatar{
@@ -10,9 +15,23 @@
     margin-right: 20px;
 }
 
+.user-component__avatar--sm{
+    width: 60px;
+    height: 60px;
+}
+
+.user-component__avatar--xl{
+    width: 80px;
+    height: 80px;
+}
+
 .user-component__title{
     font-weight: 600;
     font-size: 23px;
+}
+
+.user-component__title--not-bold{
+    font-weight: 400;
 }
 
 .user-component__subtitle{
