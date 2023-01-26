@@ -4,10 +4,6 @@
     justify-content: space-between;
 }
 
-.user-component:last-child{
-    color: rgba(0, 0, 0, 0.5);
-}
-
 .user-component__avatar{
     width: 70px;
     height: 70px;
