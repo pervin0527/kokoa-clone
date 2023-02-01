@@ -1,0 +1,66 @@
+<!-- HTML 문서는 반드시 <!DOCTYPE html>로 시작되어야한다. 이 코드는 단순한 text 파일이 아니라 html문서라고 알려주는 것. -->
+<!DOCTYPE html>
+<html lang="kr">
+    <!-- <<html>태그 내에 적는 코드가 바로 HTML 코드. 또한 <head>와 <body>로 시작되어야 한다.-->
+    <head>
+        <!-- head는 페이지에 관한 환경설정. 외부적으로 보이지 않는 부분을 설정한다. -->
+        <!-- head 태그 안에 있는 모든 태그들은 보여지지 않는다. -->
+        <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://nomadcoders.co/m.png">
+        <title>Tutorial day2 - 2023.02.01</title>
+
+        <!-- meta태그의 meta는 부가적인 정보라는 뜻. self-closing 태그로 content를 가지지 않는다.-->
+        <meta charset="utf-8">
+        <meta name="description" content="this is meta content. so invisible.">
+
+    </head>
+    <body>
+        <!-- body는 사용자가 볼 수 있는 content를 보여준다. -->
+        <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/meta">About meta tag</a>
+        <a href="https://developer.mozilla.org/en-US/docs/web/html/Element">HTML Elements doc</a>
+        <p>Kokoa clone 2020 lecture. we learn about <abbr title="Hyper Text Markup Language">HTML</abbr> & <abbr title="Cascading Style Sheet">CSS</abbr></p>
+
+        <!-- <form> HTML 요소는 정보 제출을 위한 대화형 컨트롤이 포함된 문서 섹션을 나타낸다. -->
+        <form action="">
+            <input type="file" accept=".jpg">
+            <input type="text" placeholder="UserName">
+            <input type="text" placeholder="Password" minlength="8">
+            <input type="email" required>
+            <input type="submit">
+            <input type="submit" value="Create Account">
+        </form>
+
+        <div>
+            <!-- <label> HTML 요소는 사용자 인터페이스의 항목에 대한 캡션을 나타낸다. label의 content를 클릭해도 input이 클릭된다. -->
+            <!-- <label>은 <input>과 함께 사용되어야 한다. -->
+            <label for="cheese">Do you like cheese?</label> 
+            <input type="checkbox" name="cheese" id="cheese">
+        </div>
+        
+        <!-- Content division element -->
+        <div>
+            <!-- for값과 id값이 동일할 때 동작함. -->
+            <label for="peas">Do you like peas?</label>
+            <!-- id는 body내에 어떠한 태그에든 추가할 수 있는 attribute.-->
+            <!-- unique identifier. id 값은 고유값. 중복이 허용되지 않음. -->
+            <!-- element당 하나의 id만 가질 수 있다. -->
+            <input id="peas" type="checkbox" id="peas">
+        </div>
+
+        <!-- semantic and non-semantic tag -->
+        <!-- 태그의 이름만으로 그 의미를 알 수 있는 것이 semantic tag. -->
+        <header>
+            <h1>This is header.</h1>
+        </header>
+
+        <!-- header 코드 부분과 같은 기능을 하지만, 개발자 입장에서 의미파악이 한 번에 되지 않음. -->
+        <div>
+            <h1>This is header.</h1>
+        </div>
+
+        <main>
+            <span>Korea rep</span>
+            <address>Korea rep</address>
+        </main>
+        <footer>&copy by jun</footer>
+    </body>
+</html>
