@@ -1,0 +1,36 @@
+.flex-parent1{
+    background-color: #ff6547;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flex-parent2{
+    width: 300px;
+    height: 300px;
+    background-color: #f4dfb2;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teal-color{
+    background-color: #018180;
+}
+
+.flex-child1{
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+}
+
+.flex-child2{
+    width: 260px;
+    height: 70px;
+    border: 3px dashed white;
+    margin: 20px 0px;
+}

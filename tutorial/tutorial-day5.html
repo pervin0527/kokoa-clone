@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial day5 - Margin, Padding, Border</title>
+    <style>
+        /* 모든 원소들에 대해 property를 적용하고자 할 때 사용한다. *{} */
+        *{
+            border: 2px dashed black;
+        }
+        html{
+            background-color: tomato;
+        }
+        body{
+            background-color: thistle;
+            /* margin은 box의 경계로부터 바깥쪽 영역 */
+            margin: 20px;
+            /* padding은 box의 경계로부터 안쪽 영역 */
+            padding: 20px;
+        }
+        div{
+            padding: 20px;
+            /* border는 box의 경계부분. 선 굵기, 선 스타일, 선 색깔 */
+            /* border: 2px solid black; */
+        }
+        #first{
+            background-color: whitesmoke;
+            height: 150px;
+            width: 150px;
+        }
+        #second{
+            background-color: teal;
+            height: 100px;
+            width: 100px;
+        }
+        #third{
+            background-color: wheat;
+            height: 50px;
+            width: 50px;
+        }
+        #inside-div{
+            border-style: dotted;
+        }
+
+        .inline-test__span{
+            background-color: teal;
+            padding: 20px;
+            margin: 20px;
+        }
+        .except-to-all{
+            border: 3px solid black;
+        }
+
+        .flex-box__parent{
+            border: none;
+            /* block을 inline으로 바꾸려고 할 때 display : inline으로 하면, 높이와 넓이를 가질 수 없음. */
+            /* inline-block으로 하면 block을 유지하면서 inline이 된다. 단, responsive하지 못함.*/
+            /* display: inline-block; */
+            /* flex-box */
+            /* 1. 자식 원소에는 어떤 것도 적지 말 것. 부모 원소에만 명시할 것. 3개의 div를 담고 있는 부모는 body */
+            /* 2. main-axis : default가 수평(horizontal). */
+            /* 3. cross-axis : default가 수직(vertical). */
+            display: flex;
+            /* vh : viewport height = 화면의 높이 */
+            /* vw : 화면의 넓이 */
+            height: 100vh;
+            justify-content: space-between;
+            align-items: center;
+            /* flex-direction : column으로 하면, main-axis가 cross-axis가 되고, cross-axis가 main-axis가 된다. */
+            /* flex-direction: column;
+            justify-content: center;
+            align-items: flex-end; */
+
+            /* flex-wrap : 원소들이 강제로 한 줄에 배치게되게 할지 또는 가능한 영역 내에서 벗어나지 않으면서 여러 행으로 나누어 표현할 것인지 결정. */
+            flex-wrap: wrap;
+
+        }
+        .flex-box__child1{
+            border: none;
+            width: 150px;
+            height: 150px;
+            background-color: teal;
+
+            /* div 내에 span에 대한 flex-box로 만들기. */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-box__child2{
+            border: none;
+            color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="first">
+        <div id="second">
+            <div id="third">
+                <span id="inside-div">Inline</span> 
+            </div>
+        </div>
+    </div>
+
+    <div class="inline-test except-to-all">
+        <!-- inline 원소도 border를 적용할 수 있나?? YES.-->
+        <!-- inline 원소도 margin, padding을 적용할 수 있나?? padding은 가능하지만, margin은 좌우만 가능.-->
+        <!-- inline 원소는 height, width를 가질 수 없음. -->
+        <span class="inline-test__span except-to-all">Hello</span>
+        <span class="inline-test__span except-to-all">Hello</span>
+    </div>
+
+    <div class="flex-box__parent">
+        <div class="flex-box__child1">
+            <span class="flex-box__child2">1</span>
+        </div>
+        <div class="flex-box__child1">
+            <span class="flex-box__child2">2</span>
+        </div>
+        <div class="flex-box__child1">
+            <span class="flex-box__child2">3</span>
+        </div>
+    </div>
+    
+</body>
+</html>
