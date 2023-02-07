@@ -1,0 +1,30 @@
+.btn-active:active{
+    background-color: tomato;
+}
+
+.btn-hover:hover{
+    background-color: yellow;
+}
+
+.input-focus:focus{
+    background-color: blueviolet;
+}
+
+.anchor-visited:visited{
+    color: crimson;
+}
+
+.form-focus-within{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid salmon;
+    padding: 20px;
+}
+
+.form-focus-within:focus-within{
+    border: 5px dashed skyblue;
+}
+
+.form-focus-within:hover input{
+    background-color: coral;
+}

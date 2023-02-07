@@ -1,0 +1,41 @@
+.for-transformation{
+    border: 10px solid black;
+    border-radius: 50%;
+    /* transform: rotateY(45deg) rotateX(20deg) rotateZ(10deg); */
+    /* transform: scale(2, 2); */
+    /* transform: scaleX(2); */
+    /* transform: translateX(-40px); */
+    transition: transform 3s ease-in-out;
+}
+
+.for-transformation:hover{
+    transform: rotateY(360deg) scale(0.5);
+}
+
+/* Animation */
+@keyframes coinFlip{
+    /* from{
+        transform: rotateX(0deg);
+    }
+
+    to{
+        transform: rotateX(360deg) rotateY(100deg);
+    } */
+
+    0%{
+        transform: rotateX(0deg);
+    }
+
+    50%{
+        transform: rotateX(360deg) rotateY(100deg);
+    }
+
+    100%{
+        transform: rotateX(0deg)
+    }
+}
+
+.for-animation{
+    border-radius: 50%;
+    animation: coinFlip 5s ease-in-out infinite;
+}
