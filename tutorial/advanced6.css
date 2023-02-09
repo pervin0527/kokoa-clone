@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap');
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Baloo Tamma 2', cursive;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.contents{
+    background-color:white;
+    width: 340px;
+    /* padding:50px 30px 15px 30px; */
+}
+
+.screen-header{
+    background-color: #ffce31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 100px;
+    padding: 35px 10px 30px 10px;
+}
+
+.screen-header__column{
+    width: 33%;
+}
+
+.screen-header__column:first-child{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.screen-header__column:nth-child(2){
+    font-size: 20px;
+    text-align: center;
+}
+
+.screen-header__column:last-child{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.screen-main{
+    padding: 0px 15px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.search input{
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    bottom: 20px;
+    padding: 15px 25px;
+    border: none;
+}
+
+.search input::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.search i{
+    position: absolute;
+    top: -8px;
+    left: 270px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.main-music__title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main-music__column{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main-music__column-cover img{
+    width: 105px;
+    height: 160px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.main-music__column-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main-music__column-artist{
+    color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.main-music__column-stars{
+    color: #ffce31;
+}
+
+.main-music__column-stars i:last-child{
+    color: #ededed;
+    opacity: 0.5;
+}
+
+.Top-Adventures__contents{
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+}
+
+
+.Top-Adventures__contents-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.Top-Adventures__contents img{
+    width: 85px;
+    height: 105px;
+    margin-bottom: 15px;
+}
+
+.Popular-Artist__column{
+    display: flex;
+}
+
+.Popular-Artist__column-cover img{
+    width: 110px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.Popular-Artist__column-data-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Popular-Artist__column-data-sub{
+    opacity: 0.2;
+}
