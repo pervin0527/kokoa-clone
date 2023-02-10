@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-contents{
+    background-color: whitesmoke;
+    width: 1003px;
+    height: 935px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-block{
+    width: 300px;
+    height: 650px;
+    border: rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+    padding: 35px 20px;
+    position: relative;
+    background-color: white;
+}
+
+.block-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.artist-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.artist-profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.artist-profile h3{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.artist-profile h5{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+}
+
+.artist-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-buttons div:first-child{
+    margin-right: 10px;
+}
+
+.artist-buttons > div{
+    height: 40px;
+    width: 100px;
+    box-shadow: 5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.artist-buttons div:first-child{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.artist-buttons div:last-child i{
+    margin-right: 5px;
+}
+
+.artist-buttons .like-count{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.music-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.music-column img{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    margin: 0px 15px;
+}
+
+.music-column i{
+    margin-right: 15px;
+}
+
+.album-data{
+    width: 100%;
+}
+
+.album-data h5{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.album-data h3{
+    font-weight: 600;
+}
+
+.playing{
+    width: 280px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    border-radius: 40px;
+    padding: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+.play-info h5{
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.play-info h3, .play-buttons i{
+    color: white;
+}
+
+.play-buttons i:first-child, .play-buttons i:nth-child(2){
+    margin-right: 20px;
+}
+
+.play-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-screen img{
+    margin: 65px 0px;
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+.play-screen h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.play-screen h5{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.play-range__time{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+}
+
+.play-range input{
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.play-btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.play-btns i:first-child, .play-btns i:last-child{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.play-btns i:nth-child(3){
+    font-size: 50px;
+}
